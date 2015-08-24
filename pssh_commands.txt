@@ -1,0 +1,23 @@
+pscp.pssh, prsync, pslurp, pnuke commands
+
+
+
+copy
+pscp.pssh -v -h nodes.txt -l root -p 3 -e /tmp /tmp/ChakDeIndiaMastiLandcom.avi /tmp
+
+
+to run the commands
+pssh -vh nodes.txt -i "uptime"
+
+
+pslurp to collect the files
+pslurp -h nodes.txt -L /tmp/moives -l root /tmp/ChakDeIndiaMastiLandcom.avi ChakDeIndiaMastiLandcom.avi
+
+
+
+pnuke 
+The pnuke command is useful when you want to kill a bunch of processes on a set of machines.
+
+
+prsync 
+prsync deploy files files to all hosts you listed.
